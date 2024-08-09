@@ -1,0 +1,347 @@
+// color variants
+@import 'themes-vars.module.scss';
+
+// third-party
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+
+// ==============================|| LIGHT BOX ||============================== //
+.fullscreen .react-images__blanket {
+  z-index: 1200;
+}
+
+// ==============================|| APEXCHART ||============================== //
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+  margin-right: 8px;
+}
+
+// ==============================|| PERFECT SCROLLBAR ||============================== //
+
+.scrollbar-container {
+  .ps__rail-y {
+    &:hover > .ps__thumb-y,
+    &:focus > .ps__thumb-y,
+    &.ps--clicking .ps__thumb-y {
+      background-color: $grey500;
+      width: 5px;
+    }
+  }
+  .ps__thumb-y {
+    background-color: $grey500;
+    border-radius: 6px;
+    width: 5px;
+    right: 0;
+  }
+}
+
+.btnRetourArticles{
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.cellule_listeCommande{
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 1px lightblue;
+}
+
+.cellule_listeCommande:hover{
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 4px lightblue;
+  cursor: pointer;
+}
+
+.sousTitreProduit{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+  position: relative;
+  left: 0%;
+  border-radius: 20px 0 0 20px;
+  padding: 10px;
+  opacity: 0.6;
+}
+
+ .sousTitreProduit{
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.conteneurProduit:hover{
+  box-shadow: 0 6px 20px 2px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.conteneurProduit:hover .sousTitreProduit{
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.defaultBackImage{
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 50% 40%;
+}
+
+.mb-4{
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 1px lightblue;
+  border: 1px solid #e1e1e1;
+
+}
+
+.mb-8{
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mb-4:hover{
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 4px lightblue;
+  cursor: pointer;
+}
+
+.mb-4-none{
+  box-shadow: 5px 5px 1px lightblue;
+}
+
+.mb-4-none:hover{
+  box-shadow: 10px 10px 4px lightblue;
+  cursor: pointer;
+}
+
+.listeImage{
+  margin-top: 20px;
+}
+
+.dark{color:rgba(55, 65, 81,1);}
+
+.productBackImage{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btnAjoutProduit{
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 50% 50%;
+
+}
+
+.btnAjoutAccount{
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(250,250,255);
+}
+
+.btnAjoutCommande{
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.btnAjoutEvent{
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.conteneurViolet{
+  overflow: auto;
+  max-height: 680px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(250,250,255);
+}
+
+.btnAccount{
+  background-color:rgb(240,240,255);
+  margin:2px;
+}
+
+.btnAccount:hover{
+  background-color:rgb(230,230,255);
+  margin:2px;
+}
+
+table button{
+  margin-right: 10px;
+}
+
+span{
+  color:#444;
+}
+
+.checkbox-container{
+  display:flex;
+  align-items: center;
+}
+
+.checkMark{
+  width:5px;
+}
+
+// scollbar
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.btnProfil{
+  border-radius: 5px;
+  float: right;
+}
+
+.scrollbar-container.ps,
+.scrollbar-container > .ps {
+  &.ps--active-y > .ps__rail-y {
+    width: 5px;
+    background-color: transparent !important;
+    z-index: 999;
+    &:hover,
+    &.ps--clicking {
+      width: 5px;
+      background-color: transparent;
+    }
+  }
+  &.ps--scrolling-y > .ps__rail-y,
+  &.ps--scrolling-x > .ps__rail-x {
+    opacity: 0.4;
+    background-color: transparent;
+  }
+}
+
+.myContainer{
+  max-height: 680px;
+  overflow: auto;
+  box-shadow: 5px 5px 1px lightblue;
+  padding:20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}
+
+.myContainer:hover{
+  box-shadow: 10px 10px 4px lightblue;
+  cursor: pointer;
+}
+
+.historicalContainer{
+  max-height: 680px;
+  overflow: auto;
+  box-shadow: 5px 5px 1px lightblue;
+  border: 1px solid #e1e1e1;
+}
+
+.historicalContainer:hover{
+  // box-shadow: 10px 10px 4px lightblue;
+  cursor: pointer;
+}
+
+.badgeDate{
+  color:#999;
+  font-size: 11px;
+}
+
+// ==============================|| ANIMATION KEYFRAMES ||============================== //
+
+@keyframes wings {
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -5px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -7px, 0);
+  }
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+@keyframes slideY {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes slideX {
+  0%,
+  50%,
+  100% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
